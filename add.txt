@@ -1,0 +1,4 @@
+add this to readme
+
+"Known audit warnings exist due to upstream packages like react-scripts and svgo. 
+They are safe during development and will be re-evaluated before production."
