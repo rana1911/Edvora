@@ -1,9 +1,9 @@
-import catchAsyncError from "./catchAsyncError";
+import catchAsyncError from "./catchAsyncError.js";
 import jwt from "jsonwebtoken";
-import ErrorHandler from "../utils/ErrorHandler";
-import { User } from "../models/User";
+import ErrorHandler from "../utils/ErrorHandler.js";
+import { User } from "../models/User.js";
 
-const isAuthenticated = catchAsyncError(async (err, req, res, next) => {
+export const isAuthenticated = catchAsyncError(async (err, req, res, next) => {
     const { token } = req.cookie;
     if(!token) return next(new ErrorHandler("Not logged in", 401));
     const decoded = jwt.verify(token, process.env.JWT_SECRET);

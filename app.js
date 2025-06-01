@@ -13,12 +13,12 @@ app.use(express.urlencoded({
 
 
 
-// import course from "./routes/courseRoutes.js";
-// import user from "./routes/userRoutes.js"
-// import ErrorMiddleware from "./middlewares/Error.js";
+import course from "./backend/routes/courseRoutes.js";
+import user from "./backend/routes/userRoutes.js"
+import ErrorMiddleware from "./backend/middlewares/Error.js";
 
-// app.use("/api/v1",course);
-// app.use("/api/v1",user);
+app.use("/api/v1",course);
+app.use("/api/v1",user);
 export default app;
 
-// app.use(ErrorMiddleware);
+app.use(ErrorMiddleware);

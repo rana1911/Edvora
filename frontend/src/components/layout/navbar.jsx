@@ -83,7 +83,7 @@ const Navbar = () => {
                   </Link>
 
                   <p>OR</p>
-                  <Link onClick={onClose}>
+                  <Link to="/register" onClick={onClose}>
                     <Button colorScheme="yellow"> Sign Up</Button>
                   </Link>
                 </>

@@ -27,7 +27,7 @@ const Register = () => {
   return (
     <Container h={'95vh'}>
       <VStack h={'full'} justifyContent={'center'} spacing={'16'}>
-        <Heading>Sign Up for Coursebundler</Heading>
+        <Heading>Sign Up for Edvora</Heading>
         <form onSubmit={submitHandler} style={{ width: '100%' }}>
           <Box marginY={'4'}>
             <FormLabel htmlFor="name">Name</FormLabel>

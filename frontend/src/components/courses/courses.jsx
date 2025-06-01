@@ -109,7 +109,7 @@ const Courses = () => {
         alignItems={['center','flex-start']}
       >
         <Course
-          creator={'Ram'}
+          creator={'Rana'}
           description={'Sample Description'}
           lectureCount={'3'}
           imgSrc={web}
